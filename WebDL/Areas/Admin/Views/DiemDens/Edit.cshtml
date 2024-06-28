@@ -1,0 +1,124 @@
+﻿@model WebDL.Context.DiemDen
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .card {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: #f8f9fa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-right: 50px;
+        float: right;
+    }
+
+    .card-header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 15px 10px 0px;
+        text-align: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem; /* Giảm khoảng cách giữa các form-group */
+    }
+
+    .card-label {
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 0;
+        width: 15%; /* Độ rộng của nhãn */
+        text-align: left;
+        padding-right: 1rem; /* Khoảng cách từ nhãn đến ô nhập liệu */
+    }
+
+    .card-control {
+        width: 80%; /* Độ rộng của ô nhập liệu */
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .card-footer {
+        background-color: #f8f9fa;
+        border-top: 1px solid #dee2e6;
+        padding: 12px 20px;
+        text-align: right;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .card-button {
+        padding: 8px 16px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Chỉnh Sửa Thông Tin Điểm Đến</h3>
+        </div>
+        <div class="card-body">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.MaDiemDen)
+
+            <div class="form-group">
+                <label class="card-label" for="TenDiemDen">Tên Điểm Đến:</label>
+                @Html.EditorFor(model => model.TenDiemDen, new { htmlAttributes = new { @class = "form-control card-control", id = "TenDiemDen" } })
+                @Html.ValidationMessageFor(model => model.TenDiemDen, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="card-label" for="MoTa">Mô Tả:</label>
+                @Html.EditorFor(model => model.MoTa, new { htmlAttributes = new { @class = "form-control card-control", id = "MoTa" } })
+                @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="card-label" for="ViTri">Vị Trí:</label>
+                @Html.EditorFor(model => model.ViTri, new { htmlAttributes = new { @class = "form-control card-control", id = "ViTri" } })
+                @Html.ValidationMessageFor(model => model.ViTri, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label class="card-label" for="LinkAnh">Link Ảnh:</label>
+                @Html.EditorFor(model => model.LinkAnh, new { htmlAttributes = new { @class = "form-control card-control", id = "LinkAnh" } })
+                @Html.ValidationMessageFor(model => model.LinkAnh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary card-button">Lưu</button>
+                @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary card-button ml-2" })
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+
+

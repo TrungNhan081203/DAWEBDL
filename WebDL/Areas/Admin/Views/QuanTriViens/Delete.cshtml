@@ -1,0 +1,78 @@
+﻿@model WebDL.Context.QuanTriVien
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .delete-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .details-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+        .details-item dt {
+            flex: 1;
+            font-weight: bold;
+        }
+
+        .details-item dd {
+            flex: 2;
+        }
+
+    .form-actions {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .btn {
+        margin-right: 10px;
+    }
+</style>
+
+<div class="delete-container">
+    <h3>Bạn có chắc chắn muốn xóa quản trị viên này?</h3>
+    <div>
+        <h4>Thông tin quản trị viên</h4>
+        <hr />
+        <dl class="details-list">
+            <div class="details-item">
+                <dt>Tên Đăng Nhập</dt>
+                <dd>@Html.DisplayFor(model => model.TenDangNhap)</dd>
+            </div>
+            <div class="details-item">
+                <dt>Mật Khẩu</dt>
+                <dd>@Html.DisplayFor(model => model.MatKhau)</dd>
+            </div>
+            <div class="details-item">
+                <dt>Email</dt>
+                <dd>@Html.DisplayFor(model => model.Email)</dd>
+            </div>
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa quản trị viên này không?');" /> |
+                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
+            </div>
+        }
+    </div>
+</div>

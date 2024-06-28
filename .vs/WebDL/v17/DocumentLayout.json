@@ -1,0 +1,532 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|c:\\users\\hs\\downloads\\webdl1\\webdl\\webdl\\views\\home\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\home\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|c:\\users\\hs\\downloads\\webdl1\\webdl\\webdl\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\views\\destination\\destination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\destination\\destination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\controllers\\destinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\controllers\\destinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|c:\\users\\hs\\downloads\\webdl1\\webdl\\webdl\\views\\contact\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\contact\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|c:\\users\\hs\\downloads\\webdl1\\webdl\\webdl\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|c:\\users\\hs\\downloads\\webdl1\\webdl\\webdl\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\views\\pricing\\pricingdetailskorea.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\pricing\\pricingdetailskorea.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|c:\\users\\hs\\downloads\\webdl1\\webdl\\webdl\\areas\\content\\dist\\js\\demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\areas\\content\\dist\\js\\demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\views\\pricing\\pricing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\pricing\\pricing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\controllers\\pricingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\controllers\\pricingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\views\\pricing\\pricingdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\pricing\\pricingdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\views\\pricing\\pricingdetailshanoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\views\\pricing\\pricingdetailshanoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\areas\\admin\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\areas\\admin\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\areas\\admin\\controllers\\diemdenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\areas\\admin\\controllers\\diemdenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\areas\\admin\\controllers\\datchocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\areas\\admin\\controllers\\datchocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\webdl\\context\\webdl.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{EA2DADB2-D08B-4AB4-8406-3F635C0A31FB}|WebDL\\WebDL.csproj|solutionrelative:webdl\\context\\webdl.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HS\\AppData\\Local\\Temp\\.vsdbgsrc\\a4ffaf4bee12dd771a1bf699e8e5a06235a134b9059eb01c60ffec3a1a02d2b9\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Home\\Success.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Home\\Success.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Home\\Success.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Home\\Success.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAADwvzAAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T19:35:14.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PricingDetailsKorea.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Pricing\\PricingDetailsKorea.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Pricing\\PricingDetailsKorea.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Pricing\\PricingDetailsKorea.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Pricing\\PricingDetailsKorea.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAADwv3EAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T12:23:37.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminAreaRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeDocumentMoniker": "WebDL\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeToolTip": "WebDL\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:19:55.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAMkAAAAAAAAAAAAAAPkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T11:16:46.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Content\\css\\style.css",
+              "RelativeDocumentMoniker": "WebDL\\Content\\css\\style.css",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Content\\css\\style.css",
+              "RelativeToolTip": "WebDL\\Content\\css\\style.css",
+              "ViewState": "AQIAAJcHAAAAAAAAAAAYwLMHAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-25T13:28:19.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebDL\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebDL\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAwwIMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:15:43.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAFMAAAAAAAAAAIAywHAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T12:17:19.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T18:44:07.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DestinationController.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\DestinationController.cs",
+              "RelativeDocumentMoniker": "WebDL\\Controllers\\DestinationController.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\DestinationController.cs",
+              "RelativeToolTip": "WebDL\\Controllers\\DestinationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:32:01.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Destination.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Destination\\Destination.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Destination\\Destination.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Destination\\Destination.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Destination\\Destination.cshtml",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAIwHsAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T13:32:11.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAAAGQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T18:28:35.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "demo.js",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Areas\\Content\\dist\\js\\demo.js",
+              "RelativeDocumentMoniker": "WebDL\\Areas\\Content\\dist\\js\\demo.js",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Areas\\Content\\dist\\js\\demo.js",
+              "RelativeToolTip": "WebDL\\Areas\\Content\\dist\\js\\demo.js",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswBAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-25T18:19:14.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Home\\Register.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Home\\Register.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Home\\Register.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Home\\Register.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAALIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T18:29:27.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Contact\\Contact.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Contact\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Contact\\Contact.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Contact\\Contact.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAADwv1AAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T18:44:18.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PricingController.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\PricingController.cs",
+              "RelativeDocumentMoniker": "WebDL\\Controllers\\PricingController.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\PricingController.cs",
+              "RelativeToolTip": "WebDL\\Controllers\\PricingController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:32:09.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Pricing.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Pricing\\Pricing.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Pricing\\Pricing.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Pricing\\Pricing.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Pricing\\Pricing.cshtml",
+              "ViewState": "AQIAAM8AAAAAAAAAAAA4wNkAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T12:14:15.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PricingDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Pricing\\PricingDetails.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Pricing\\PricingDetails.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Pricing\\PricingDetails.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Pricing\\PricingDetails.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAmwHAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T12:15:41.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PricingDetailsHanoi.cshtml",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Pricing\\PricingDetailsHanoi.cshtml",
+              "RelativeDocumentMoniker": "WebDL\\Views\\Pricing\\PricingDetailsHanoi.cshtml",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Views\\Pricing\\PricingDetailsHanoi.cshtml",
+              "RelativeToolTip": "WebDL\\Views\\Pricing\\PricingDetailsHanoi.cshtml",
+              "ViewState": "AQIAAEsAAAAAAAAAAADwv1gAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T12:23:29.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Web.config",
+              "RelativeDocumentMoniker": "WebDL\\Web.config",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Web.config",
+              "RelativeToolTip": "WebDL\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-25T11:27:55.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DiemDensController.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Areas\\Admin\\Controllers\\DiemDensController.cs",
+              "RelativeDocumentMoniker": "WebDL\\Areas\\Admin\\Controllers\\DiemDensController.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Areas\\Admin\\Controllers\\DiemDensController.cs",
+              "RelativeToolTip": "WebDL\\Areas\\Admin\\Controllers\\DiemDensController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:31:35.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WebDL\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WebDL\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:31:56.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "WebDL\\Controllers\\ManageController.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "WebDL\\Controllers\\ManageController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:15:43.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ReservationsController.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Areas\\Admin\\Controllers\\ReservationsController.cs",
+              "RelativeDocumentMoniker": "WebDL\\Areas\\Admin\\Controllers\\ReservationsController.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Areas\\Admin\\Controllers\\ReservationsController.cs",
+              "RelativeToolTip": "WebDL\\Areas\\Admin\\Controllers\\ReservationsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:31:42.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "WebDL\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "WebDL\\Controllers\\ContactController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwwAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:31:57.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DatChoController.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Areas\\Admin\\Controllers\\DatChoController.cs",
+              "RelativeDocumentMoniker": "WebDL\\Areas\\Admin\\Controllers\\DatChoController.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Areas\\Admin\\Controllers\\DatChoController.cs",
+              "RelativeToolTip": "WebDL\\Areas\\Admin\\Controllers\\DatChoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:31:28.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\packages.config",
+              "RelativeDocumentMoniker": "WebDL\\packages.config",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\packages.config",
+              "RelativeToolTip": "WebDL\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-25T11:28:34.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Global.asax.cs",
+              "RelativeDocumentMoniker": "WebDL\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Global.asax.cs",
+              "RelativeToolTip": "WebDL\\Global.asax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:28:38.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Startup.cs",
+              "RelativeDocumentMoniker": "WebDL\\Startup.cs",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Startup.cs",
+              "RelativeToolTip": "WebDL\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:28:32.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "WebDL.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Context\\WebDL.edmx",
+              "RelativeDocumentMoniker": "WebDL\\Context\\WebDL.edmx",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\Context\\WebDL.edmx [Diagram1]",
+              "RelativeToolTip": "WebDL\\Context\\WebDL.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-06-25T11:28:16.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "DocumentMoniker": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\favicon.ico",
+              "RelativeDocumentMoniker": "WebDL\\favicon.ico",
+              "ToolTip": "C:\\Users\\HS\\Downloads\\WebDL1\\WebDL\\WebDL\\favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "RelativeToolTip": "WebDL\\favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2024-06-25T11:28:39.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\HS\\AppData\\Local\\Temp\\.vsdbgsrc\\a4ffaf4bee12dd771a1bf699e8e5a06235a134b9059eb01c60ffec3a1a02d2b9\\HomeController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a4ffaf4bee12dd771a1bf699e8e5a06235a134b9059eb01c60ffec3a1a02d2b9\\HomeController.cs",
+              "ToolTip": "C:\\Users\\HS\\AppData\\Local\\Temp\\.vsdbgsrc\\a4ffaf4bee12dd771a1bf699e8e5a06235a134b9059eb01c60ffec3a1a02d2b9\\HomeController.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\a4ffaf4bee12dd771a1bf699e8e5a06235a134b9059eb01c60ffec3a1a02d2b9\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:16:51.658Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

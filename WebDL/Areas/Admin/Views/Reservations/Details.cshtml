@@ -1,0 +1,101 @@
+﻿@model WebDL.Context.Reservation
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .details-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .details-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .details-container hr {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+    .details-list dt {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .details-list dd {
+        margin-bottom: 10px;
+    }
+
+    .details-actions {
+        margin-top: 20px;
+    }
+
+        .details-actions a {
+            margin-right: 10px;
+        }
+</style>
+
+<div class="details-container">
+    <div>
+        <h4>Thông tin đặt phòng</h4>
+        <hr class="mb-4" />
+
+        <dl class="details-list">
+            <dt>
+                Họ và tên
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.FullName)
+            </dd>
+
+            <dt>
+                Email
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                Ngày bắt đầu
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.StartDate)
+            </dd>
+
+            <dt>
+                Ngày kết thúc:
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.EndDate)
+            </dd>
+
+            <dt>
+                Điểm đến
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Destination)
+            </dd>
+
+            <dt>
+                Số lượng người 
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Participants)
+            </dd>
+        </dl>
+    </div>
+
+    <div class="details-actions">
+        @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Quay lại danh sách", "Index", new { @class = "btn btn-default" })
+    </div>
+</div>

@@ -1,0 +1,142 @@
+﻿@model WebDL.Context.TourDuLich
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .card {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-right: 50px;
+        float: right;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .col-form-label {
+        font-size: 1rem;
+    }
+
+    .form-control {
+        width: calc(100% - 0.75rem);
+    }
+
+    .btn-primary {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .card-footer {
+        background-color: #fff;
+        border-top: 1px solid #dee2e6;
+        padding: 1rem 1.25rem;
+    }
+
+        .card-footer .btn {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+
+    .back-link {
+        margin-top: 20px;
+    }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Chỉnh sửa thông tin tour</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.MaTour)
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.MaDiemDen, "Mã Điểm Đến", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.DropDownListFor(model => model.MaDiemDen, ViewBag.MaDiemDen as SelectList, "Chọn Điểm Đến", htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.MaDiemDen, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.TenTour, "Tên Tour", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.EditorFor(model => model.TenTour, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TenTour, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.MoTa, "Mô Tả", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.EditorFor(model => model.MoTa, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.Gia, "Giá", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.Gia, "{0:#,##0}", new { @class = "form-control", placeholder = "Nhập giá" })
+                    @Html.ValidationMessageFor(model => model.Gia, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.NgayBatDau, "Ngày Bắt Đầu", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.NgayBatDau, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(model => model.NgayBatDau, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.NgayKetThuc, "Ngày Kết Thúc", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.NgayKetThuc, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(model => model.NgayKetThuc, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.LinkAnh, "Link Ảnh", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.EditorFor(model => model.LinkAnh, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.LinkAnh, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                    @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary ml-2" })
+                </div>
+            </div>
+        </div>
+        <!-- /.card-footer -->
+    </div>
+}
+
+<div class="back-link">
+    @Html.ActionLink("Quay lại danh sách", "Index")
+</div>

@@ -1,0 +1,144 @@
+﻿@model WebDL.Context.TourDuLich
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<style>
+
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; 
+        background-color: #f5f5f5; 
+        padding-top: 20px; 
+        box-sizing: border-box; 
+        margin-top: 20px; 
+    }
+
+    .panel {
+        width: 100%;
+        max-width: 600px; 
+        background-color: #ffffff; 
+        border: 1px solid #ddd; 
+        border-radius: 4px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    .panel-heading {
+        background-color: #337ab7; 
+        color: #ffffff; 
+        padding: 15px 15px; 
+        border-top-left-radius: 4px; 
+        border-top-right-radius: 4px;
+    }
+
+    .panel-title {
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .panel-body {
+        padding: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .control-label {
+        font-weight: bold;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .validation-summary-errors {
+        margin-bottom: 15px;
+    }
+
+   
+    .back-link {
+   
+        text-decoration: none;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="container">
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">Tạo Tour</h3>
+        </div>
+        <div class="panel-body">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MaDiemDen, "Mã Điểm Đến", htmlAttributes: new { @class = "control-label" })
+                    @Html.DropDownList("MaDiemDen", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.MaDiemDen, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.TenTour, "Tên Tour", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.TenTour, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TenTour, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MoTa, "Mô Tả", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.MoTa, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Gia, "Giá", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.Gia, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Gia, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.NgayBatDau, "Ngày Bắt Đầu", htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.NgayBatDau, new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(model => model.NgayBatDau, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.NgayKetThuc, "Ngày Kết Thúc", htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.NgayKetThuc, new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(model => model.NgayKetThuc, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.LinkAnh, "Link Ảnh", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.LinkAnh, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.LinkAnh, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group btn-group">
+                    <input type="submit" value="Tạo" class="btn btn-primary" />
+                    <a href="@Url.Action("Index")" class="btn btn-secondary back-link">Quay Lại</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+ 
+

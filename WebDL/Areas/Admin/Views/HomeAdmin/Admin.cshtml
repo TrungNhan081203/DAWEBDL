@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Thống Kê</h1>
+                </div><!-- /.col -->
+                
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Small boxes (Stat box) -->
+            <div class="row">
+
+                <!--<div class="col-lg-3 col-6">-->
+                <!-- small box -->
+                <!--<div class="small-box bg-info">
+            <div class="inner">
+                <h3>@ViewBag.TotalDatCho</h3>
+                <p>Số Lượng Đặt Chỗ</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-calendar-check"></i>
+            </div>
+            <a href="@Url.Action("Index", "DatCho", new { area = "Admin" })" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+    </div>-->
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-success">
+                        <div class="inner">
+                            <h3>@ViewBag.TotalDiemDen</h3>
+                            <p>Số Lượng Điểm Đến</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <a href="@Url.Action("Index", "DiemDens", new { area = "Admin" })" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-warning">
+                        <div class="inner">
+                            <h3>@ViewBag.TotalTourDuLich</h3>
+                            <p>Số Lượng Tour Du Lịch</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <a href="@Url.Action("Index", "TourDuLiches", new { area = "Admin" })" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-danger">
+                        <div class="inner">
+                            <h3>@ViewBag.TotalReservations</h3>
+                            <p>Số Lượng Người Đặt Tour</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                        <a href="@Url.Action("Index", "Reservations", new { area = "Admin" })" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                @*<div class="col-lg-3 col-6">
+                    <div class="small-box bg-danger">
+                        <div class="inner">
+                            <h3> @ViewBag.TotalQuanTriViens</h3>
+                            <p>Số Lượng Quản Trị Viên</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                        <a href="@Url.Action("Index", "QuanTriViens", new { area = "Admin" })" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>*@
+
+
+
+                <!-- ./col -->
+            </div>
+            <!-- /.row -->
+           
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>

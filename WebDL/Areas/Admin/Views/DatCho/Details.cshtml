@@ -1,0 +1,103 @@
+﻿@model WebDL.Context.DatCho
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    .details-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .details-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+    .dl-horizontal dt {
+        width: 120px;
+        font-weight: bold;
+    }
+
+    .dl-horizontal dd {
+        margin-left: 140px; /* Adjust as needed */
+        margin-bottom: 10px;
+    }
+
+    .action-links {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+        .action-links a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+            .action-links a:hover {
+                text-decoration: underline;
+            }
+</style>
+
+<div class="details-container">
+    <h2>Details</h2>
+
+    <div>
+        <h4>DatCho</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.SoLuongNguoi)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.SoLuongNguoi)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NgayDat)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.NgayDat)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TrangThai)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.TrangThai)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NguoiDung.TenDangNhap)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.NguoiDung.TenDangNhap)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TourDuLich.TenTour)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.TourDuLich.TenTour)
+            </dd>
+        </dl>
+    </div>
+
+    <div class="action-links">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.MaDatCho }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
+    </div>
+</div>

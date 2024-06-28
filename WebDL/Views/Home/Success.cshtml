@@ -1,0 +1,304 @@
+﻿@model WebDL.Context.Reservation
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        $(document).ready(function () {
+            $('.slick-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</head>
+<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(~/Content/images/img_6.jpg) ">
+   
+    <div class="overlay"></div>
+    <div class="gtco-container" style="margin-top:80px">
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <div class="row row-mt-15em">
+
+                    <div class="col-md-12 mt-text animate-box" data-animate-effect="fadeInUp">
+                        <h1>Đăng ký thành công !!!</h1>
+
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                                <h2>Cảm ơn bạn đã dành thời gian cho chúng tôi</h2>
+
+                                <p>Return to the <a href="@Url.Action("Index", "Home")">homepage</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<div class="gtco-section">
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                <h2 style="font-family:'Times New Roman'">Điểm đến phổ biến nhất</h2>
+
+            </div>
+        </div>
+        <div class="row">
+
+            @foreach (var item in ViewBag.DiemDen)
+            {
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="~/Content/images/@item.LinkAnh" class="fh5co-card-item image-popup">
+                        <figure>
+                            <div class="overlay"><i class="ti-plus"></i></div>
+                            <img src="~/Content/images/@item.LinkAnh" alt="Image" class="img-responsive">
+                        </figure>
+                        <div class="fh5co-text">
+                            <h2>@item.TenDiemDen</h2>
+                            <p>@item.MoTa</p>
+                            <p><span class="btn btn-primary">Schedule a Trip</span></p>
+                        </div>
+                    </a>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+
+
+<div id="gtco-features">
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+                <h2 id="Việt Nam">Khám phá những điểm du lịch tuyệt vời tại Việt Nam</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i>1</i>
+                    </span>
+                    <h3>Chùa Một Cột</h3>
+                    <img src="https://media.travel.com.vn/Destination/dc_211207_CHUA MOT COT.jpg" class="img-fluid mb-3" alt="image">
+                    <h4>Được xây dựng vào thế kỷ thứ 11, Chùa Một Cột ở Hà Nội là một biểu tượng văn hóa quan trọng của Việt Nam.</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i>2</i>
+                    </span>
+                    <h3>Vịnh Hạ Long</h3>
+                    <img src="https://media.travel.com.vn/Destination/dc_211027_Ha Long  (4).jpg" class="img-fluid mb-3" alt="image">
+                    <h4>Với hàng ngàn đảo đá vôi nổi tiếng trên thế giới, Hạ Long Bay là một trong những kỳ quan thiên nhiên đẹp nhất của Việt Nam.</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i>3</i>
+                    </span>
+                    <h3>Đà Lạt</h3>
+                    <img src="https://media.travel.com.vn/Destination/dc_200915_TAM DAO.jpg" class="img-fluid mb-3" alt="image">
+                    <h4>Mệnh danh là thiên đường của sự lãng mạn, nơi lý tưởng dành cho các cặp đôi.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="gtco-features">
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+                <h2 id="Thái Lan">Khám phá những điểm du lịch tuyệt vời tại Việt Nam</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i>1</i>
+                    </span>
+                    <h3>Chùa Một Cột</h3>
+                    <img src="https://media.travel.com.vn/Destination/dc_211207_CHUA MOT COT.jpg" class="img-fluid mb-3" alt="image">
+                    <h4>Được xây dựng vào thế kỷ thứ 11, Chùa Một Cột ở Hà Nội là một biểu tượng văn hóa quan trọng của Việt Nam.</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i>2</i>
+                    </span>
+                    <h3>Vịnh Hạ Long</h3>
+                    <img src="https://media.travel.com.vn/Destination/dc_211027_Ha Long  (4).jpg" class="img-fluid mb-3" alt="image">
+                    <h4>Với hàng ngàn đảo đá vôi nổi tiếng trên thế giới, Hạ Long Bay là một trong những kỳ quan thiên nhiên đẹp nhất của Việt Nam.</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i>3</i>
+                    </span>
+                    <h3>Đà Lạt</h3>
+                    <img src="https://media.travel.com.vn/Destination/dc_200915_TAM DAO.jpg" class="img-fluid mb-3" alt="image">
+                    <h4>Mệnh danh là thiên đường của sự lãng mạn, nơi lý tưởng dành cho các cặp đôi.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="gtco-features">
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+                <h2 id="Nhật Bản">Khám phá những điểm du lịch tuyệt vời tại Việt Nam</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i>1</i>
+                    </span>
+                    <h3>Chùa Một Cột</h3>
+                    <img src="https://media.travel.com.vn/Destination/dc_211207_CHUA MOT COT.jpg" class="img-fluid mb-3" alt="image">
+                    <h4>Được xây dựng vào thế kỷ thứ 11, Chùa Một Cột ở Hà Nội là một biểu tượng văn hóa quan trọng của Việt Nam.</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i>2</i>
+                    </span>
+                    <h3>Vịnh Hạ Long</h3>
+                    <img src="https://media.travel.com.vn/Destination/dc_211027_Ha Long  (4).jpg" class="img-fluid mb-3" alt="image">
+                    <h4>Với hàng ngàn đảo đá vôi nổi tiếng trên thế giới, Hạ Long Bay là một trong những kỳ quan thiên nhiên đẹp nhất của Việt Nam.</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i>3</i>
+                    </span>
+                    <h3>Đà Lạt</h3>
+                    <img src="https://media.travel.com.vn/Destination/dc_200915_TAM DAO.jpg" class="img-fluid mb-3" alt="image">
+                    <h4>Mệnh danh là thiên đường của sự lãng mạn, nơi lý tưởng dành cho các cặp đôi.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="gtco-cover gtco-cover-sm" style="background-image: url(~/Content/images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="gtco-container text-center">
+        <div class="display-t">
+            <div class="display-tc">
+                <h1>We have high quality services that you will surely love!</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="gtco-counter" class="gtco-section">
+    <div class="gtco-container">
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+                <h2>Our Success</h2>
+                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+                <div class="feature-center">
+                    <span class="counter js-counter" data-from="0" data-to="196" data-speed="5000" data-refresh-interval="50">1</span>
+                    <span class="counter-label">Destination</span>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+                <div class="feature-center">
+                    <span class="counter js-counter" data-from="0" data-to="97" data-speed="5000" data-refresh-interval="50">1</span>
+                    <span class="counter-label">Hotels</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+                <div class="feature-center">
+                    <span class="counter js-counter" data-from="0" data-to="12402" data-speed="5000" data-refresh-interval="50">1</span>
+                    <span class="counter-label">Travelers</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+                <div class="feature-center">
+                    <span class="counter js-counter" data-from="0" data-to="12202" data-speed="5000" data-refresh-interval="50">1</span>
+                    <span class="counter-label">Happy Customer</span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div id="gtco-subscribe">
+    <div class="gtco-container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                <h2>Subscribe</h2>
+                <p>Be the first to know about the new templates.</p>
+            </div>
+        </div>
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2">
+                <form class="form-inline">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <button type="submit" class="btn btn-default btn-block">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

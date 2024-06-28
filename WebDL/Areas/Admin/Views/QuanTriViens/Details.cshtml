@@ -1,0 +1,78 @@
+﻿@model WebDL.Context.QuanTriVien
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .details-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .details-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .details-container hr {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+    .details-list dt {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .details-list dd {
+        margin-bottom: 10px;
+    }
+
+    .details-actions {
+        margin-top: 20px;
+    }
+
+        .details-actions a {
+            margin-right: 10px;
+        }
+</style>
+
+<div class="details-container">
+    <div>
+        <h4>Thông tin Quản trị viên</h4>
+        <hr class="mb-4" />
+
+        <dl class="details-list">
+            <dt>
+                Tên Đăng Nhập
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.TenDangNhap)
+            </dd>
+            <dt>
+                Mật Khẩu
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MatKhau)
+            </dd>
+            <dt>
+                Email
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+        </dl>
+    </div>
+
+    <div class="details-actions">
+        @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaQuanTriVien }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Quay lại danh sách", "Index", new { @class = "btn btn-default" })
+    </div>
+</div>

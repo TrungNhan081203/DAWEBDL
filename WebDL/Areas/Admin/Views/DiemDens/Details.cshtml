@@ -1,0 +1,73 @@
+﻿@model WebDL.Context.DiemDen
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .details-container {
+        max-width: 600px; /* Giảm chiều rộng để phù hợp với nội dung */
+        margin: 20px auto; /* Căn giữa theo chiều ngang và đặt khoảng cách từ top */
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .details-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333333; /* Màu chữ cho tiêu đề */
+        }
+
+        .details-container hr {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-color: #cccccc; /* Màu viền cho đường kẻ ngang */
+        }
+
+    .details-list dt {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #555555; /* Màu chữ cho nhãn */
+    }
+
+    .details-list dd {
+        margin-bottom: 10px;
+        color: #333333; /* Màu chữ cho nội dung */
+    }
+
+    .details-actions {
+        margin-top: 20px;
+        text-align: right; /* Căn chỉnh các nút điều hướng sang phải */
+    }
+
+        .details-actions a {
+            margin-right: 10px;
+        }
+</style>
+
+<div class="details-container">
+    <h2>Chi Tiết Điểm Đến</h2>
+    <hr />
+
+    <dl class="details-list">
+        <dt>Tên Điểm Đến</dt>
+        <dd>@Html.DisplayFor(model => model.TenDiemDen)</dd>
+
+        <dt>Mô Tả</dt>
+        <dd>@Html.DisplayFor(model => model.MoTa)</dd>
+
+        <dt>Vị Trí</dt>
+        <dd>@Html.DisplayFor(model => model.ViTri)</dd>
+
+        <dt>Link Ảnh</dt>
+        <dd>@Html.DisplayFor(model => model.LinkAnh)</dd>
+    </dl>
+
+    <div class="details-actions">
+        @Html.ActionLink("Chỉnh Sửa", "Edit", new { id = Model.MaDiemDen }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Trở Lại Danh Sách", "Index", new { @class = "btn btn-default" })
+    </div>
+</div>

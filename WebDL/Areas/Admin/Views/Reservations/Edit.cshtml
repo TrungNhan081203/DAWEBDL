@@ -1,0 +1,129 @@
+﻿@model WebDL.Context.Reservation
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .card {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem; /* Giảm khoảng cách dưới cùng của các nhóm form */
+    }
+
+    .col-form-label {
+        font-size: 1rem;
+        white-space: nowrap; /* Ngăn ngừa nhãn bị wrap xuống dòng */
+        padding-right: 5px; /* Tăng khoảng cách bên phải giữa nhãn và ô nhập liệu */
+    }
+
+    .form-control {
+        width: calc(100% - 1rem); /* Điều chỉnh chiều rộng của ô nhập liệu */
+        font-size: 1rem; /* Điều chỉnh kích thước font cho ô nhập liệu */
+        height: 2rem; /* Điều chỉnh chiều cao của ô nhập liệu */
+    }
+
+    .btn-primary {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .card-footer {
+        background-color: #fff;
+        border-top: 1px solid #dee2e6;
+        padding: 1rem 1.25rem;
+    }
+
+        .card-footer .btn {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Chỉnh sửa thông tin đặt tour</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.Id)
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.FullName, "Họ và tên", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.Email, "Email", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.StartDate, "Ngày bắt đầu", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.EditorFor(model => model.StartDate, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.StartDate, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.EndDate, "Ngày kết thúc", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.EditorFor(model => model.EndDate, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.EndDate, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.Destination, "Điểm đến", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.EditorFor(model => model.Destination, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Destination, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.Participants, "Số lượng người ", htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+                <div class="col-sm-10">
+                    @Html.EditorFor(model => model.Participants, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Participants, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                    @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary" })
+                </div>
+            </div>
+        </div>
+        <!-- /.card-footer -->
+    </div>
+}
+

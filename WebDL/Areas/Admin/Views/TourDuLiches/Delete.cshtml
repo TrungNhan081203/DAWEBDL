@@ -1,0 +1,103 @@
+﻿@model WebDL.Context.TourDuLich
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    .dl-horizontal dt {
+        width: 150px;
+        font-weight: bold;
+    }
+
+    .dl-horizontal dd {
+        margin-left: 170px;
+    }
+
+    .form-actions {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .btn {
+        margin-right: 10px;
+    }
+
+    .delete-container {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<div class="delete-container">
+    <h3>Bạn có chắc chắn muốn xóa điều này?</h3>
+    <h4>Thông Tin Tour Du Lịch</h4>
+    <div>
+        <h4>TourDuLich</h4>
+        <hr />
+        <dt>
+            @Html.DisplayName("Tên Tour")
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TenTour)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Mô Tả")
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Giá")
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GiaFormatted)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Ngày Bắt đầu")
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NgayBatDau)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Ngày Kết thúc")
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NgayKetThuc)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Link Ảnh")
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LinkAnh)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Điểm Đến")
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiemDen.TenDiemDen)
+        </dd>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Xóa" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa điều này không?');" /> |
+                @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary" })
+            </div>
+        }
+    </div>
+</div>

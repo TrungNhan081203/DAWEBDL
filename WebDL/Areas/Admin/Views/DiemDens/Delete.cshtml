@@ -1,0 +1,113 @@
+﻿@model WebDL.Context.DiemDen
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    .delete-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .delete-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .delete-container h3 {
+            font-size: 18px;
+            color: #555555;
+        }
+
+        .delete-container hr {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-color: #cccccc;
+        }
+
+        .delete-container dl {
+            margin-bottom: 20px;
+        }
+
+        .delete-container dt {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        .delete-container dd {
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+    .form-actions {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        .form-actions .btn-default {
+            background-color: #dc3545;
+            color: #ffffff;
+            border-color: #dc3545;
+            padding: 8px 20px;
+        }
+
+            .form-actions .btn-default:hover {
+                background-color: #c82333;
+                border-color: #bd2130;
+            }
+
+    .back-link {
+        color: #007bff;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="delete-container">
+
+    <h3>Bạn có chắc chắn muốn xóa?</h3>
+    <h4>Thông Tin Điểm Đến</h4>
+    <hr />
+
+    <dl>
+        <dt>Tên Điểm Đến</dt>
+        <dd>@Html.DisplayFor(model => model.TenDiemDen)</dd>
+
+        <dt>Mô Tả</dt>
+        <dd>@Html.DisplayFor(model => model.MoTa)</dd>
+
+        <dt>Vị Trí</dt>
+        <dd>@Html.DisplayFor(model => model.ViTri)</dd>
+
+        <dt>Link Ảnh</dt>
+        <dd>@Html.DisplayFor(model => model.LinkAnh)</dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa điều này không?');" /> |
+            @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary" })
+        </div>
+    }
+</div>

@@ -1,0 +1,128 @@
+﻿@model WebDL.Context.QuanTriVien
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Điều chỉnh này để đưa bảng lên phía trên */
+        height: 100vh;
+        background-color: #f5f5f5;
+        margin-top: 15px;
+        padding-top: 20px; /* Thêm khoảng cách phía trên */
+    }
+
+    .panel {
+        width: 100%;
+        max-width: 600px;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+    }
+
+    .panel-heading {
+        background-color: #337ab7;
+        color: #ffffff;
+        padding: 10px 15px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    .panel-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    .panel-body {
+        padding: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .control-label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .validation-summary-errors {
+        margin-bottom: 15px;
+    }
+
+    .form-horizontal .form-group {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+        .btn-container .btn,
+        .btn-container .back-link {
+            margin-right: 10px;
+        }
+</style>
+
+<div class="container">
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">Tạo Quản Trị Viên</h3>
+        </div>
+        <div class="panel-body">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.TenDangNhap, "Tên Đăng Nhập", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.TenDangNhap, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TenDangNhap, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MatKhau, "Mật Khẩu", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Email, "Email", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="btn-container">
+                    <input type="submit" value="Tạo" class="btn btn-primary" />
+                    @Html.ActionLink("Quay lại", "Index", null, new { @class = "btn btn-secondary back-link" })
+                </div>
+            }
+        </div>
+    </div>
+</div>

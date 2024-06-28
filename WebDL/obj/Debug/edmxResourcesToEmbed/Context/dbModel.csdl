@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebDLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DanhGia">
+    <Key>
+      <PropertyRef Name="MaDanhGia" />
+    </Key>
+    <Property Name="MaDanhGia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaNguoiDung" Type="Int32" />
+    <Property Name="MaTour" Type="Int32" />
+    <Property Name="DiemDanhGia" Type="Int32" />
+    <Property Name="BinhLuan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NgayDanhGia" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="NguoiDung" Relationship="Self.FK__DanhGia__MaNguoi__6D0D32F4" FromRole="DanhGia" ToRole="NguoiDung" />
+    <NavigationProperty Name="TourDuLich" Relationship="Self.FK__DanhGia__MaTour__6E01572D" FromRole="DanhGia" ToRole="TourDuLich" />
+  </EntityType>
+  <EntityType Name="DatCho">
+    <Key>
+      <PropertyRef Name="MaDatCho" />
+    </Key>
+    <Property Name="MaDatCho" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaNguoiDung" Type="Int32" />
+    <Property Name="MaTour" Type="Int32" />
+    <Property Name="NgayDat" Type="DateTime" Precision="3" />
+    <Property Name="TrangThai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NguoiDung" Relationship="Self.FK__DatCho__MaNguoiD__68487DD7" FromRole="DatCho" ToRole="NguoiDung" />
+    <NavigationProperty Name="TourDuLich" Relationship="Self.FK__DatCho__MaTour__693CA210" FromRole="DatCho" ToRole="TourDuLich" />
+    <NavigationProperty Name="ThanhToans" Relationship="Self.FK__ThanhToan__MaDat__71D1E811" FromRole="DatCho" ToRole="ThanhToan" />
+  </EntityType>
+  <EntityType Name="DiemDen">
+    <Key>
+      <PropertyRef Name="MaDiemDen" />
+    </Key>
+    <Property Name="MaDiemDen" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDiemDen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MoTa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ViTri" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="LinkAnh" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TourDuLiches" Relationship="Self.FK__TourDuLic__MaDie__6383C8BA" FromRole="DiemDen" ToRole="TourDuLich" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="MaNguoiDung" />
+    </Key>
+    <Property Name="MaNguoiDung" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDangNhap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HoTen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SoDienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NgayTao" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="DanhGias" Relationship="Self.FK__DanhGia__MaNguoi__6D0D32F4" FromRole="NguoiDung" ToRole="DanhGia" />
+    <NavigationProperty Name="DatChoes" Relationship="Self.FK__DatCho__MaNguoiD__68487DD7" FromRole="NguoiDung" ToRole="DatCho" />
+  </EntityType>
+  <EntityType Name="QuanTriVien">
+    <Key>
+      <PropertyRef Name="MaQuanTriVien" />
+    </Key>
+    <Property Name="MaQuanTriVien" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDangNhap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ThanhToan">
+    <Key>
+      <PropertyRef Name="MaThanhToan" />
+    </Key>
+    <Property Name="MaThanhToan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaDatCho" Type="Int32" />
+    <Property Name="SoTien" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="NgayThanhToan" Type="DateTime" Precision="3" />
+    <Property Name="PhuongThuc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DatCho" Relationship="Self.FK__ThanhToan__MaDat__71D1E811" FromRole="ThanhToan" ToRole="DatCho" />
+  </EntityType>
+  <EntityType Name="TourDuLich">
+    <Key>
+      <PropertyRef Name="MaTour" />
+    </Key>
+    <Property Name="MaTour" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaDiemDen" Type="Int32" />
+    <Property Name="TenTour" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MoTa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Gia" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="NgayBatDau" Type="DateTime" Precision="0" />
+    <Property Name="NgayKetThuc" Type="DateTime" Precision="0" />
+    <Property Name="LinkAnh" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DanhGias" Relationship="Self.FK__DanhGia__MaTour__6E01572D" FromRole="TourDuLich" ToRole="DanhGia" />
+    <NavigationProperty Name="DatChoes" Relationship="Self.FK__DatCho__MaTour__693CA210" FromRole="TourDuLich" ToRole="DatCho" />
+    <NavigationProperty Name="DiemDen" Relationship="Self.FK__TourDuLic__MaDie__6383C8BA" FromRole="TourDuLich" ToRole="DiemDen" />
+  </EntityType>
+  <Association Name="FK__DanhGia__MaNguoi__6D0D32F4">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="DanhGia" Type="Self.DanhGia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="MaNguoiDung" />
+      </Principal>
+      <Dependent Role="DanhGia">
+        <PropertyRef Name="MaNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DanhGia__MaTour__6E01572D">
+    <End Role="TourDuLich" Type="Self.TourDuLich" Multiplicity="0..1" />
+    <End Role="DanhGia" Type="Self.DanhGia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TourDuLich">
+        <PropertyRef Name="MaTour" />
+      </Principal>
+      <Dependent Role="DanhGia">
+        <PropertyRef Name="MaTour" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DatCho__MaNguoiD__68487DD7">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="DatCho" Type="Self.DatCho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="MaNguoiDung" />
+      </Principal>
+      <Dependent Role="DatCho">
+        <PropertyRef Name="MaNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DatCho__MaTour__693CA210">
+    <End Role="TourDuLich" Type="Self.TourDuLich" Multiplicity="0..1" />
+    <End Role="DatCho" Type="Self.DatCho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TourDuLich">
+        <PropertyRef Name="MaTour" />
+      </Principal>
+      <Dependent Role="DatCho">
+        <PropertyRef Name="MaTour" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ThanhToan__MaDat__71D1E811">
+    <End Role="DatCho" Type="Self.DatCho" Multiplicity="0..1" />
+    <End Role="ThanhToan" Type="Self.ThanhToan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DatCho">
+        <PropertyRef Name="MaDatCho" />
+      </Principal>
+      <Dependent Role="ThanhToan">
+        <PropertyRef Name="MaDatCho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TourDuLic__MaDie__6383C8BA">
+    <End Role="DiemDen" Type="Self.DiemDen" Multiplicity="0..1" />
+    <End Role="TourDuLich" Type="Self.TourDuLich" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DiemDen">
+        <PropertyRef Name="MaDiemDen" />
+      </Principal>
+      <Dependent Role="TourDuLich">
+        <PropertyRef Name="MaDiemDen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WebDLEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DanhGias" EntityType="Self.DanhGia" />
+    <EntitySet Name="DatChoes" EntityType="Self.DatCho" />
+    <EntitySet Name="DiemDens" EntityType="Self.DiemDen" />
+    <EntitySet Name="NguoiDungs" EntityType="Self.NguoiDung" />
+    <EntitySet Name="QuanTriViens" EntityType="Self.QuanTriVien" />
+    <EntitySet Name="ThanhToans" EntityType="Self.ThanhToan" />
+    <EntitySet Name="TourDuLiches" EntityType="Self.TourDuLich" />
+    <AssociationSet Name="FK__DanhGia__MaNguoi__6D0D32F4" Association="Self.FK__DanhGia__MaNguoi__6D0D32F4">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="DanhGia" EntitySet="DanhGias" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DanhGia__MaTour__6E01572D" Association="Self.FK__DanhGia__MaTour__6E01572D">
+      <End Role="TourDuLich" EntitySet="TourDuLiches" />
+      <End Role="DanhGia" EntitySet="DanhGias" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DatCho__MaNguoiD__68487DD7" Association="Self.FK__DatCho__MaNguoiD__68487DD7">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="DatCho" EntitySet="DatChoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DatCho__MaTour__693CA210" Association="Self.FK__DatCho__MaTour__693CA210">
+      <End Role="TourDuLich" EntitySet="TourDuLiches" />
+      <End Role="DatCho" EntitySet="DatChoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ThanhToan__MaDat__71D1E811" Association="Self.FK__ThanhToan__MaDat__71D1E811">
+      <End Role="DatCho" EntitySet="DatChoes" />
+      <End Role="ThanhToan" EntitySet="ThanhToans" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TourDuLic__MaDie__6383C8BA" Association="Self.FK__TourDuLic__MaDie__6383C8BA">
+      <End Role="DiemDen" EntitySet="DiemDens" />
+      <End Role="TourDuLich" EntitySet="TourDuLiches" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

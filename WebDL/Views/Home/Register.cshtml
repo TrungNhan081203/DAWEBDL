@@ -1,0 +1,246 @@
+﻿@model WebDL.Context.NguoiDung
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+<!DOCTYPE HTML>
+<!--
+    Aesthetic by gettemplates.co
+    Twitter: http://twitter.com/gettemplateco
+    URL: http://gettemplates.co
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Traveler &mdash; Free Website Template, Free HTML5 Template by GetTemplates.co</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Website Template by GetTemplates.co" />
+    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+    <meta name="author" content="GetTemplates.co" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="~/Content/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="~/Content/css/icomoon.css">
+    <!-- Themify Icons-->
+    <link rel="stylesheet" href="~/Content/css/themify-icons.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="~/Content/css/magnific-popup.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap-datepicker.min.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="~/Content/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/css/owl.theme.default.min.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="~/Content/js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        .register-form {
+            background: #e0f7e9;
+            padding: 40px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            /* Adjust height as needed */
+            height: auto; /* or specify a fixed height if desired */
+        }
+
+        .register-form h2 {
+            margin: 0 0 20px;
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        .register-form label {
+            color: #4CAF50;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .register-form input[type="text"],
+        .register-form input[type="password"],
+        .register-form input[type="email"],
+        .register-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        .register-form input[type="submit"] {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .register-form input[type="submit"]:hover {
+            background: #45a049;
+        }
+
+        .register-form .text-danger {
+            color: #e74c3c;
+        }
+
+        .alert {
+            color: #e74c3c;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gtco-loader"></div>
+
+    <div id="page" style="background-image: url('/Content/images/booking.jpg'); background-size: cover; height: 1100px ">
+        <header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(~/Content/images/img_bg_3.jpg); height:50px">
+        </header>
+        <div class="hello">
+            <h1>.</h1>
+        </div>
+
+        <div class="gtco-container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                    <div style="max-width: 500px; margin: auto;" class="register-form">
+                        <h2 style="text-align: center;">Đăng Ký</h2>
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="form-group">
+                            @Html.Label("Tên Đăng Nhập")
+                            @Html.EditorFor(model => model.TenDangNhap, new { htmlAttributes = new { @class = "form-control", placeholder = "Nhập tên đăng nhập" } })
+                            <div style="float:right">
+                                @Html.ValidationMessageFor(model => model.TenDangNhap, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Mật Khẩu")
+                            @Html.EditorFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control", type = "password", placeholder = "Nhập mật khẩu" } })
+                            <div style="float:right">
+                                @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Email")
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Nhập địa chỉ email" } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Họ Tên")
+                            @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control", placeholder = "Nhập họ và tên" } })
+                            @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Số Điện Thoại")
+                            @Html.EditorFor(model => model.SoDienThoai, new { htmlAttributes = new { @class = "form-control", placeholder = "Nhập số điện thoại" } })
+                            @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Địa Chỉ")
+                            @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control", placeholder = "Nhập địa chỉ" } })
+                            @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+                        </div>
+                        @if (TempData["Error"] != null)
+                        {
+                            <div class="alert alert-danger">
+                                @TempData["Error"]
+                            </div>
+                        }
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <p class="text-muted">Đã có tài khoản? <a href="@Url.Action("Login", "Home")">Đăng nhập ngay</a></p>
+                        </div>
+
+                        @if (TempData["SuccessMessage"] != null)
+                        {
+                            <div class="alert alert-success">
+                                @TempData["SuccessMessage"]
+                            </div>
+                        }
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+    <!-- jQuery -->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="~/Content/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="~/Content/js/jquery.waypoints.min.js"></script>
+    <!-- Carousel -->
+    <script src="~/Content/js/owl.carousel.min.js"></script>
+    <!-- countTo -->
+    <script src="~/Content/js/jquery.countTo.js"></script>
+
+    <!-- Stellar Parallax -->
+    <script src="~/Content/js/jquery.stellar.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <script src="~/Content/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/Content/js/magnific-popup-options.js"></script>
+
+    <!-- Datepicker -->
+    <script src="~/Content/js/bootstrap-datepicker.min.js"></script>
+
+
+    <!-- Main -->
+    <script src="~/Content/js/main.js"></script>
+
+</body>
+</html>
+
+
