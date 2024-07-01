@@ -44,7 +44,7 @@
 	        /* 	touch-action: none; */
 	        text-transform: uppercase;
 
-	        opacity: 0;
+	        opacity: 1;
 	        animation: fade-in ease-out 300ms 1.2s forwards;
         }
 
